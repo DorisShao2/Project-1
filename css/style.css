@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #faf9f6;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: #334b43;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.site-header,
+main,
+.site-footer {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid #d6d0c7;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.hero-grid,
+.cards-gallery,
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.spotlight,
+.intro,
+.detail-hero {
+    background-color: #f2eee8;
+    padding: 24px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #334b43;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #334b43;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.selected-work {
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #d6d0c7;
+    background-color: #ffffff;
+}
+
+.card .button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.detail-hero {
+    margin-bottom: 32px;
+}
+
+.project-story section {
+    margin-bottom: 32px;
+}
+
+.project-info {
+    padding: 24px;
+    background-color: #f2eee8;
+    align-self: start;
+}
+
+.project-info h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid #d6d0c7;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header,
+    main,
+    .site-footer {
+        padding: 32px 40px;
+    }
+
+    .site-header,
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cards-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .content-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .spotlight,
+    .intro,
+    .detail-hero {
+        padding: 32px;
+    }
+}
